@@ -1,0 +1,12 @@
+# Node/npm artifacts (if you add tooling later)
+node_modules/
+npm-debug.log
+.DS_Store
+/dist
+/.aws-sam
+
+# OS
+Thumbs.db
+
+# IDE
+.vscode/

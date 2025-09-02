@@ -1,0 +1,16 @@
+version: 1
+applications:
+  - appRoot: .
+    frontend:
+      phases:
+        preBuild:
+          commands: []
+        build:
+          commands: []
+      artifacts:
+        # Amplify will publish the contents of the `src` directory
+        baseDirectory: src
+        files:
+          - '**/*'
+      cache:
+        paths: []

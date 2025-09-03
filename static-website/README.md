@@ -6,12 +6,13 @@ This is a basic static website project built with HTML, CSS, and JavaScript. The
 
 ```
 static-website
+├── index.html            # Main HTML document (moved to repo root)
 ├── src
-│   ├── index.html        # Main HTML document
 │   ├── styles
 │   │   └── main.css      # Styles for the website
-│   └── scripts
-│       └── main.js       # JavaScript code for interactivity
+│   ├── scripts
+│   │   └── main.js       # JavaScript code for interactivity
+│   └── assets            # images and svgs
 ├── .gitignore            # Files and directories to ignore by Git
 └── README.md             # Project documentation
 ```
@@ -28,28 +29,28 @@ static-website
    cd static-website
    ```
 
-3. Open the `src/index.html` file in your web browser to view the website.
+3. Open the `index.html` file in your web browser to view the website.
 
 ## Deployment to AWS Amplify
 
 1. Create a new app in AWS Amplify.
 2. Connect your GitHub repository to AWS Amplify.
-3. Use the included `amplify.yml` at the repository root as the build settings (it publishes `src/`).
+3. Use the included `amplify.yml` at the repository root as the build settings (it publishes the repository root).
 4. Deploy the app.
 
 ## Try it locally
 
-You can open `src/index.html` directly in a browser, or run a simple static server, e.g. with Python:
+You can open `index.html` directly in a browser, or run a simple static server from the project root, e.g. with Python:
 
 ```powershell
-python -m http.server 8000 -d src
+python -m http.server 8000
 ```
 
 Then open http://localhost:8000 in your browser.
 
 ## Contact form configuration
 
-The repository includes a contact form at `src/index.html`. By default the form's `action` is set to a `mailto:` fallback. To receive messages via a server you can:
+The repository includes a contact form at `index.html`. By default the form's `action` is set to a `mailto:` fallback. To receive messages via a server you can:
 
 - Use Formspree (easy, no backend):
    1. Create a free Formspree form at https://formspree.io
@@ -63,7 +64,7 @@ The client-side JS will POST to the configured endpoint and show a status messag
 
 The project includes a neutral placeholder SVG at `src/assets/logo-placeholder.svg` and CSS that places it as a subtle page background. To use an official Saudi Aramco logo:
 
-- Replace `src/assets/logo-placeholder.svg` with your authorized SVG or raster image (keep the same filename or update `--bg-logo` in `src/styles/main.css`).
+- Replace `src/assets/logo-placeholder.svg` with your authorized SVG or raster image (keep the same filename or update `--bg-logo` in `src/styles/main.css`). Note assets live in `static-website/src/assets/` when `index.html` is at the project root.
 - Make sure you have the right to use the Saudi Aramco logo and follow their brand/trademark guidelines.
 
 If you want, I can add the logo file for you once you provide it.

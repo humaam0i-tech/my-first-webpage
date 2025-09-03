@@ -8,7 +8,6 @@ applications:
         build:
           commands: []
       artifacts:
-        # Amplify will publish the repository root (index.html at project root)
         baseDirectory: .
         files:
           - '**/*'

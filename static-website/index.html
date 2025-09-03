@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdullah — Planner</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+    <header>
+        <img src="src/assets/aramco-logo.svg" alt="Company logo" class="brand-logo">
+        <div class="container">
+            <h1>Abdullah</h1>
+            <p class="tagline">Planner — 20 years of experience in Khurais producing dep.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2>About</h2>
+            <p>Hello — I'm Abdullah. I'm a planner with 20 years of experience in Khurais producing dep. I specialize in production planning, scheduling, and cross-team coordination to deliver consistent results.</p>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li>20 years in production planning and operations management.</li>
+                <li>Expertise in resource allocation, timeline optimization, and stakeholder communication.</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Selected Projects</h2>
+            <div class="projects-grid">
+                <article>
+                    <h3>Production Optimization</h3>
+                    <p>Implemented scheduling improvements that reduced downtime and improved throughput.</p>
+                </article>
+                <article>
+                    <h3>Cross-Functional Planning</h3>
+                    <p>Coordinated teams to streamline handoffs between departments and reduced lead times.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you'd like to reach out, use the form below. To make the form deliver messages to your inbox, update the form's <code>action</code> attribute to a mailto address or set a Formspree/endpoint URL in the README.</p>
+
+            <form id="contact-form" class="card-box" method="POST" action="mailto:your-email@example.com" aria-label="Contact form">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required>
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required>
+
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">Send message</button>
+                <p class="form-status" id="form-status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year">2025</span> Abdullah</p>
+    </footer>
+
+    <button id="theme-toggle" aria-pressed="false" aria-label="Toggle light and dark theme">Toggle theme</button>
+    <script src="src/scripts/main.js"></script>
+</body>
+</html>

@@ -3,7 +3,7 @@
     --fg: #072238; /* deep blue for text */
     --primary: #0b63d6; /* primary blue */
     --accent: #1ea7ff; /* lighter accent */
-    --bg-logo: url('assets/aramco-logo.svg');
+    --bg-logo: url('../assets/aramco-logo.svg');
 }
 
 [data-theme="dark"]{
